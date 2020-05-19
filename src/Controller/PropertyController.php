@@ -12,15 +12,17 @@ class PropertyController extends AbstractController{
      * @return Response
      */
     public function index() : Response {
-        return $this->render('property/index.html.twig', ['current_menu' => 'properties']);
+        return $this->render('property/index.html.twig', 
+        ['current_menu' => 'properties']);
     }
 
     /**
-     * @Route("/view", name="property.view")
+     * @Route("/view", name="property.location")
      * @return Response
      */
-    public function view() : Response {
-        return $this->render('property/view.html.twig', ['current_menu' => 'properties']);
+    public function location() : Response {
+        return $this->render('property/location.html.twig', 
+        ['current_menu' => 'locations']);
     }
 }
 

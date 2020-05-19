@@ -7,7 +7,7 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <a class="navbar-brand" href="{{ path('home') }}">Mon Agence</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,8 +16,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" {% if current_menu is defined and current_menu == 'properties' %}active{% endif %} href="{{ path('property.index') }}">Acheter</a>
-                    <a class="nav-link" {% if current_menu is defined and current_menu == 'properties' %}active{% endif %} href="{{ path('property.view') }}">Louer</a>
+                    <a class="nav-link {% if current_menu is defined and current_menu == 'properties' %}active{% endif %}" href="{{ path('property.index') }}">Acheter</a>
+                    <a class="nav-link {% if current_menu is defined and current_menu == 'locations' %}active{% endif %}" href="{{ path('property.location') }}">Louer</a>
                 </li>
             </ul>
         </div>
