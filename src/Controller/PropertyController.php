@@ -14,4 +14,15 @@ class PropertyController extends AbstractController{
     public function index() : Response {
         return $this->render('property/index.html.twig', ['current_menu' => 'properties']);
     }
+
+    /**
+     * @Route("/view", name="property.view")
+     * @return Response
+     */
+    public function view() : Response {
+        return $this->render('property/view.html.twig', ['current_menu' => 'properties']);
+    }
 }
+
+
+

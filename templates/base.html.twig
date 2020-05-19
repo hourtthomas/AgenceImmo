@@ -17,6 +17,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" {% if current_menu is defined and current_menu == 'properties' %}active{% endif %} href="{{ path('property.index') }}">Acheter</a>
+                    <a class="nav-link" {% if current_menu is defined and current_menu == 'properties' %}active{% endif %} href="{{ path('property.view') }}">Louer</a>
                 </li>
             </ul>
         </div>
